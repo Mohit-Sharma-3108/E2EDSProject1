@@ -1,0 +1,15 @@
+pandas
+mlflow
+numpy
+ipykernel
+scikit-learn
+matplotlib
+python-box
+pyYAML
+tqdm
+ensure
+joblib
+types-PyYAML
+Flask
+Flask-Core
+
