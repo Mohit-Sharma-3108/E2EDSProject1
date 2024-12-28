@@ -13,4 +13,9 @@ class DataValidationConfig:
     root_dir: Path
     unzip_data_dir: Path
     STATUS_FILE: str
-    all_schema: dict # WIll hold schema.yaml's content
+    all_schema: dict # WIll hold schema.yaml's 
+    
+@dataclass
+class DataTransformationConfig:
+    root_dir: Path
+    data_path: Path
