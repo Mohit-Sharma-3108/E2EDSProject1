@@ -2,6 +2,7 @@ from src.datascience import logger
 from src.datascience.pipeline.pipeline_data_ingestion import DataIngestionTrainingPipeline
 from src.datascience.pipeline.pipeline_data_validation import DataValidationTrainingPipeline
 from src.datascience.pipeline.pipeline_data_transformation import DataTransformationTrainingPipeline
+from src.datascience.pipeline.pipeline_model_trainer import ModelTrainerTrainingPipeline
 
 STAGE_NAME = "Data Ingestion Stage"
 
@@ -32,6 +33,17 @@ try:
     obj = DataTransformationTrainingPipeline()
     obj.initiate_data_transformation()
     logger.info(f">>>>> Stafe {STAGE_NAME} completed! >>>>>\n\nx=========x")
+
+except Exception as e:
+    raise e
+
+STAGE_NAME = "Model Trainer Stage"
+
+try: 
+    logger.info(f">>>>> Stage: {STAGE_NAME} started <<<<<")
+    obj = ModelTrainerTrainingPipeline()
+    obj.initiate_model_trainer()
+    logger.info(f">>>>> Stage {STAGE_NAME} completed! >>>>>\n\nx=========x")
 
 except Exception as e:
     raise e
