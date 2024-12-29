@@ -19,4 +19,4 @@
 7. update the pipeline
 8. Update the main.py
 
-### Let's add a random line in model-trainer branch for merge conflicts
+### Changed sentence to get merge conflicts
